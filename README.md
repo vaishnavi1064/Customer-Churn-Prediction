@@ -1,22 +1,26 @@
-# 🎮 Video Game Sales Prediction Web App
+# 📉 Customer Churn Prediction
 
-A Django-based web application that predicts video game sales using a trained Machine Learning model, demonstrating an end-to-end ML workflow from data analysis to deployment.
+A machine learning project focused on predicting customer churn using structured customer behavior data. The project demonstrates an end-to-end classification workflow, from exploratory data analysis to model training and evaluation.
 
 ## 🚀 Overview
-- Analyzed a structured video game sales dataset using exploratory data analysis (EDA) to identify trends across platforms, genres, and regions, informing feature selection for predictive modeling  
-- Trained and compared regression models (Linear Regression and Support Vector Regression) using scikit-learn to predict global video game sales, and serialized the best-performing model for production inference  
-- Deployed the trained model within a Django web application by implementing inference-time feature encoding and validation logic, enabling real-time sales predictions through a user-facing interface  
+- Performed exploratory data analysis (EDA) on customer behavior data and identified class imbalance, with approximately 20–25% of customers churning, guiding metric selection and modeling strategy  
+- Trained and optimized multiple classification models (Logistic Regression, Random Forest, and XGBoost) using GridSearchCV and RandomizedSearchCV  
+- Evaluated model performance using ROC-AUC, recall, and confusion matrices on an 80/20 train–test split to prioritize churn detection  
 
 ## 🧠 Tech Stack
-- Python, Django  
+- Python  
 - Scikit-learn  
+- XGBoost  
 - Pandas, NumPy  
-- SQLite  
-- Heroku  
+- Matplotlib, Seaborn  
+
+## 📊 Dataset
+- Structured customer-level dataset containing demographic, account, and service usage features  
+- Target variable: customer churn (binary classification)  
 
 ## ▶️ Run Locally
 ```bash
-git clone https://github.com/your-username/video-games-sales.git
-cd video-games-sales
+git clone https://github.com/your-username/customer-churn-prediction.git
+cd customer-churn-prediction
 pip install -r requirements.txt
-python manage.py runserver
+python churn_prediction.py
