@@ -1,22 +1,18 @@
 # 🎮 Video Game Sales Prediction Web App
 
-A Django-based web application that predicts video game sales using a trained Machine Learning model. This project demonstrates an end-to-end ML workflow, from data analysis and model training to web deployment.
+A Django-based web application that predicts video game sales using a trained Machine Learning model, demonstrating an end-to-end ML workflow from data analysis to deployment.
 
 ## 🚀 Overview
-- Trained an ML model on historical video game sales data  
-- Serialized the model using `pickle`  
-- Integrated the model into a Django web application  
-- Deployed-ready configuration (Heroku compatible)
+- Analyzed a structured video game sales dataset using exploratory data analysis (EDA) to identify trends across platforms, genres, and regions, informing feature selection for predictive modeling  
+- Trained and compared regression models (Linear Regression and Support Vector Regression) using scikit-learn to predict global video game sales, and serialized the best-performing model for production inference  
+- Deployed the trained model within a Django web application by implementing inference-time feature encoding and validation logic, enabling real-time sales predictions through a user-facing interface  
 
 ## 🧠 Tech Stack
 - Python, Django  
 - Scikit-learn  
 - Pandas, NumPy  
 - SQLite  
-- Heroku
-
-## 📊 Dataset
-- `video_games_sales.csv` – historical video game sales data
+- Heroku  
 
 ## ▶️ Run Locally
 ```bash
